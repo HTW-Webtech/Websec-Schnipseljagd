@@ -1,0 +1,81 @@
+/*
+Bootstrap (minified): https://netdna.bootstrapcdn.com/bootstrap/3.0.0/assets/css/bootstrap.min.css
+*/
+
+body { background-color: LightCyan; }
+
+img { max-width: 100%; }
+
+.container {
+   margin: 20px auto;
+   max-width: 970px;
+}
+
+.panel-small {
+   margin: 30px auto;
+   width: 400px;
+}
+
+.form-control { margin-bottom: 15px; }
+
+.document-viewer {
+   padding: 5px;
+   background-color: white;
+}
+
+.document-viewer iframe {
+   min-height: 600px;
+   width: 100%;
+}
+
+@media (min-width: 992px) {
+   .list-group-item.active {
+      position: relative;
+
+   }
+   .list-group-item.active:after {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: -21px;
+      width: 0;
+      height: 0;
+      border: solid transparent;
+      border-width: 21px;
+      border-color: rgba(66, 139, 202, 0);
+      border-left-color: #428bca;
+      content: " ";
+      pointer-events: none;
+   }
+}
+
+.input-task {
+   margin-bottom: 20px;
+}
+
+.thumbnail {
+   margin-bottom: 25px;
+   padding: 0;
+}
+.thumbnail:hover .buttons-edit { visibility: visible; }
+.thumbnail .image {
+   position: relative;
+   display: block;
+   margin: 0 auto;
+   height: 218px;
+   border-radius: 4px 4px 0 0;
+   background-size: cover;
+}
+
+.thumbnail .caption {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.check {
+   margin: 0;
+   text-align: center;
+   font-size: 42px;
+   color: #468847;
+}

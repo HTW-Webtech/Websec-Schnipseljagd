@@ -1,0 +1,75 @@
+body {
+   background:
+   radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+   radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+   radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+   radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+   radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+   radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+   radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+   radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+   linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+   linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+   background-color: #300;
+   background-size: 100px 100px;
+}
+
+.container {
+   padding: 30px 0;
+   max-width: 1024px;
+   margin: 0 auto;
+}
+
+.karte {
+   position: relative;
+   padding: 10px 10px 6px;
+   background-color: #5A0000;
+}
+
+.karte img { width: 100%; }
+
+.karte p {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   margin: 50px 80px;
+   color: white;
+   text-align: right;
+   text-shadow: 0 0 5px #333;
+   font: italic bold 3em/1.3 Georgia, serif;
+}
+
+.motive {
+   padding: 0;
+   text-align: center;
+}
+
+.motive li {
+   display: inline-block;
+   margin: 3px;
+   width: 150px;
+   height: 100px;
+   border: 5px solid #5A0000;
+}
+
+.motive li img {
+   width: 100%;
+   height: 100%;
+}
+
+.credits {
+   margin-top: 50px;
+   padding: 0;
+   color: #999;
+   text-align: center;
+   font: 12px sans-serif;
+}
+
+.credits li { display: inline-block; }
+.credits li:before { content: ' * '; }
+.credits li:first-child:before { content: ''; }
+
+.credits li a {
+   color: #999;
+   text-decoration: none;
+}

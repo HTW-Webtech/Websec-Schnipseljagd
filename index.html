@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false">
+<head>
+   <meta charset="UTF-8">
+   <title>Login</title>
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+   <div class="container">
+      <div class="panel panel-small panel-default">
+
+         <div class="panel-heading">
+            <h3 class="panel-title">Bitte loggen Sie sich ein</h3>
+         </div>
+
+         <div class="panel-body">
+
+            <div class="alert alert-danger hidden">
+               <strong>Falsches Passwort!</strong> Versuchen Sie es erneut.
+            </div>
+
+            <div class="alert alert-success hidden">
+               <strong>Korrektes Passwort!</strong> Sie werden weitergeleitet.
+            </div>
+
+            <form role="form" action="." method="POST">
+               <input class="form-control" type="password" name="password" placeholder="Passwort">
+               <button type="submit" class="btn btn-primary btn-block">Einloggen</button>
+            </form>
+
+         </div> <!-- / .panel-body -->
+      </div> <!-- / .panel -->
+
+   </div> <!-- / .container -->
+
+   <script src="assets/js/jquery-2.1.1.min.js"></script>
+   <script>
+      $('button').on('click', function(event) {
+         event.preventDefault();
+
+         if (btoa($('input')[0].value) === 'YnVtbWVsbGV0enRlcg==') {
+            $('.alert-danger').addClass('hidden');
+            $('.alert-success').removeClass('hidden');
+            setTimeout(function() {
+               document.location += atob('ZG9rdW1lbnRlLmh0bWw=');
+            }, 2000);
+         }
+         else {
+            $('.alert-danger').removeClass('hidden');
+         }
+      });
+   </script>
+
+</body>
+</html>

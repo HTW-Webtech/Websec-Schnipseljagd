@@ -1,0 +1,15 @@
+Arbeiten JavaScript-Routinen auf dem Client oder auf dem Server?
+Nennen Sie mindestens zwei Arten, JavaScript-Code in eine Web-Seite einzubinden. Welche Art sollten Sie für Ihre praktische Arbeit bevorzugen?
+Kennt JavaScript ein Typenkonzept, in dem Sinne, dass der Zugriff auf Variablen von deren Typ abhängig ist?
+Welche (Basis-)Datentypen kennt JavaScript? Wodurch unterscheidet sich hierbei JavaScript von Java?
+Wie kann auf dynamisch viele Parameter innerhalb von Funktionen in JavaScript zugegriffen werden? Ist das überhaupt möglich?
+Auf welche drei Arten können Sie im Browser JavaScript-Routinen zur Ausführung bringen?
+Wozu dient das Document Object Modell (DOM) in JavaScript?
+Lassen sich Cookies in JavaScript dynamisch mit beliebigen Inhalt erzeugen? Falls ja, was passiert dann, wenn diese Cookies an den Server geschickt werden, der sie ja nicht erzeugt hat?
+Ist JavaScript eine objektorientierte Sprache, in dem Sinne, dass Klassen mit Vererbung definiert werden können?
+Wie werden in JavaScript Objekte erzeugt? Wie werden sie vernichtet?
+Erläutern Sie die Idee, die hinter dem Prototype-Konstrukt in JavaScript steckt.
+In welchen Fällen ist die Benutzung eines Prototypes erforderlich? Schildern Sie ein einfaches Beispiel.
+Worin liegt die Idee von Ajax? Wofür ist Ajax ein Akronym? Welche Möglichkeiten eröffnen sich mit Ajax, die sonst nicht vorhanden wären?
+Wenn Sie eine Ajax-Anwendung programmieren wollen, mit welchem Objekt müssen Sie sich beschäftigen?
+Was ist JSON? Was bedeutet dieses Kürzel? Wozu dient es?

@@ -1,0 +1,904 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Übungsaufgaben</TITLE>
+	<META NAME="GENERATOR" CONTENT="NeoOffice 3.4  (Unix)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="20131210;16215900">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin-left: 0.98in; margin-right: 0.98in; margin-top: 0.98in; margin-bottom: 0.98in }
+		@page:first { margin-top: 0.5in; margin-bottom: 0.5in }
+		P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: de-DE }
+		P.cjk { font-family: "Times New Roman", serif; font-size: 12pt; so-language: zh-CN }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+		TD P { margin-bottom: 0in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		TD P.western { font-family: "Verdana", sans-serif; font-size: 12pt; so-language: de-DE }
+		TD P.cjk { font-family: "Times New Roman", serif; font-size: 12pt; so-language: zh-CN }
+		TD P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+		H2 { margin-bottom: 0.04in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; so-language: de-DE; font-style: italic }
+		H2.cjk { font-family: "Times New Roman", serif; font-size: 14pt; so-language: zh-CN; font-style: italic }
+		H2.ctl { font-family: "Arial", sans-serif; font-size: 14pt; so-language: ar-SA; font-style: italic }
+		H1 { margin-bottom: 0.04in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt; so-language: de-DE }
+		H1.cjk { font-family: "Times New Roman", serif; font-size: 16pt; so-language: zh-CN }
+		H1.ctl { font-family: "Arial", sans-serif; font-size: 16pt; so-language: ar-SA }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en" TEXT="#000000" BGCOLOR="#ffffff" DIR="LTR">
+<DIV TYPE=HEADER>
+	<P LANG="de-DE" ALIGN=CENTER STYLE="margin-bottom: 0.45in"><FONT FACE="Verdana, sans-serif">Prof. Heronimus – prof-heronimus@lists.htw-berlin.de</FONT></P>
+</DIV>
+<H1 LANG="de-DE" CLASS="western" ALIGN=CENTER><FONT FACE="Verdana, sans-serif">Übungsaufgaben</FONT></H1>
+<TABLE WIDTH=644 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=173>
+	<COL WIDTH=441>
+	<TR VALIGN=TOP>
+		<TD WIDTH=173>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Modul</FONT></P>
+		</TD>
+		<TD WIDTH=441>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Datenschutz
+			und Datensicherheit</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=173>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Nr.
+			und Thema</FONT></P>
+		</TD>
+		<TD WIDTH=441>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">6.
+			SSL</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=173>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Version</FONT></P>
+		</TD>
+		<TD WIDTH=441>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">1.0</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=173>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Datum</FONT></P>
+		</TD>
+		<TD WIDTH=441>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">2./4.12.2013</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=173>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Name(n)</FONT></P>
+		</TD>
+		<TD WIDTH=441>
+			<P LANG="de-DE" CLASS="western"><BR>
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<TABLE WIDTH=642 BORDER=0 CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=568>
+	<COL WIDTH=58>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><B>Zusammenhang
+			zur Lehrveranstaltung:</B></FONT></P>
+			<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">SSL
+			oder TLS das Standardverfahren zur Transportverschlüsselung im
+			Internet.  Auch wenn es einige Schwachstellen aufweist, gibt es
+			zur Zeit keine bessere Alternative. </FONT>
+			</P>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">SSH,
+			das Standardprotokoll zur Verbindung mit einem Remote-Rechner
+			verwendet ebenfalls asymmetrische Schlüssel zur Authentisierung.
+			</FONT>
+			</P>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif"><B>Voraussetzung</B></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><B>Glossar:</B></FONT></P>
+			<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in; font-weight: normal">
+			<FONT FACE="Verdana, sans-serif"><U>TLS</U> Transport Layer
+			Security: Neuer Name für SSL (Secure Socket Layer)</FONT></P>
+			<P LANG="de-DE" CLASS="western" STYLE="font-weight: normal"><FONT FACE="Verdana, sans-serif">SSH
+			Secure Shell: Protokoll zur Remote-Verbindung mit einem entfernten
+			Linux-Rechner.</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<H2 LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">1.
+			Unverschlüsselte Verbindung</FONT></H2>
+		</TD>
+		<TD WIDTH=58>
+			<H2 LANG="de-DE" CLASS="western"></H2>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Geben
+				Sie Ihre eigene IP-Adresse und den Netzwerkadapter, mit dem Sie
+				zur Zeit mit dem Internet verbunden sind, an.</FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL>
+				<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Wire-
+				shark</FONT></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western">Antwort:</P>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568 HEIGHT=20>
+			<OL START=2>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Starten
+				Sie die Wireshark Aufzeichunng (Capture) und beschränken Sie die
+				Ansicht auf Ihre IP-Adresse und das Netzwerkprotokoll http, indem
+				Sie einen Filter anwenden. Fügen Sie hier Ihren Filterausdruck
+				ein.</FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">''</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568 HEIGHT=20>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568 HEIGHT=20>
+			<OL START=3>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Starten
+				Sie Firefox. Gehen Sie zu folgender Seite:
+				<FONT FACE="DejaVu Sans Mono, monospace">fiw-com.f4.htw-berlin.de/dsds-ssl/</FONT>
+				und geben Sie die IP-Adresse dieses Servers an.</FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">''</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western">Antwort:</P>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=4>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Filtern
+				Sie nun das Capture nach der IP-Adresse des Servers
+				fiw-com.f4.htw-berlin.de. Geben Sie den Filterausdruck an.</FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=4>
+				<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">''</FONT></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=5>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Sehen
+				Sie sich im Firefox die Sicherheitsinformation über die Webseite
+				an und machen Sie einen Screenshot. Tipp: Sie können diese
+				Information über das Kontextmenü der Seite unter
+				Seiteninformationen abrufen. </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=5>
+				<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">''</FONT></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<P LANG="de-DE" CLASS="western"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=6>
+				<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Geben
+				Sie sich nun auf der Seite folgende Accountinformationen an:</FONT></P>
+				<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Username:
+				<FONT FACE="FreeMono, monospace">Fluffy</FONT></FONT></P>
+				<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Passwort:
+				<FONT FACE="FreeMono, monospace">Harold</FONT> </FONT>
+				</P>
+				<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif"><FONT FACE="Verdana, sans-serif">an
+				und machen Sie einen Screenshot (</FONT><FONT FACE="Verdana, sans-serif">BEVOR</FONT><FONT FACE="Verdana, sans-serif">
+				Sie den Login-Button drücken).</FONT></FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=6>
+				<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">''</FONT></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=6>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=7>
+				<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Loggen
+				Sie sich nun ein und stoppen Sie anschließend das Capture.</FONT></P>
+				<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Markieren
+				Sie im oberen Fenster der Wireshark-Ausgabe (Paketliste)
+				dasjenige, das die Login-Informationen erhält und machen Sie
+				einen Screenshot.</FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=7>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=7>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=8>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Sehen
+				Sie sich die Paketinformationen des Pakets mit den
+				Login-Informationen an. Ist das Passwort verschlüsselt oder
+				unverschlüsselt übertragen worden? </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=8>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=8>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=9>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Fügen
+				Sie die Paketdaten, die die Login-Informationen enthalten, ein:</FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=9>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=9>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<H2 LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">2.<B>Verschlüsselte</B>
+			Verbindungen</FONT></H2>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=9>
+				<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Wire-
+				shark</FONT></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=10>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Ändern
+				Sie die Filterbedingungen im Wireshark, so dass Sie sich alle
+				Pakete, die Ihre IP-Adresse enthalten, ansehen können. Starten
+				Sie ein neues Capture. Geben Sie den Filterausdruck an. </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=10>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=10>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=11>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Öffnen
+				Sie im Browser die Seite des HTW-Webmail. Sehen Sie sich im
+				Firefox die Sicherheitsinformation über die Webseite an und
+				machen Sie einen Screenshot.</FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=11>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=11>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=12>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Welche
+				Netzwerkprotokolle werden im Wireshark im Zusammenhang mit dem
+				Webmail-Account angezeigt? </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=12>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=12>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=13>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif"><FONT FACE="Verdana, sans-serif">Fügen
+				Sie einen Screenshot ein, auf dem die </FONT><FONT FACE="FreeMono, monospace">Client
+				Hello</FONT><FONT FACE="Verdana, sans-serif"> und </FONT><FONT FACE="FreeMono, monospace">Server
+				Hello</FONT><FONT FACE="Verdana, sans-serif"> Pakete in der
+				Paketliste zu sehen sind.</FONT></FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL>
+				<P LANG="de-DE" CLASS="western">''</P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=14>
+				<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Betrachten
+				Sie die Details des <FONT FACE="FreeMono, monospace">Client
+				Hello</FONT>. (Die Detailinformationen sind als Baum dargestellt,
+				so dass Sie ggf. die Information  erst durch Aufklappen mehrerer
+				Hierarchiestufen erhalten). </FONT>
+				</P>
+				<OL>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=3>Geben
+					Sie die SSL-Version des Clients an.</FONT></FONT></P>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT COLOR="#000000"><FONT SIZE=3><SPAN LANG="de-DE">Geben
+					Sie d</SPAN></FONT></FONT>ie <I>vollständige</I> Zufallszahl
+					an, die der Client dem Server schickt. Tipp: Wenn Sie in den
+					Details  (mittleres Fenster) die Zeile mit den „Random Bytes“
+					markieren, werden die entsprechenden Bytes in der Hexadezimal
+					und ASCII-Darstellung des Paketes (unteres Fenster) ebenfalls
+					markiert. </FONT>
+					</P>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Wie
+					<I>viele</I> verschiedene Verschlüsselungsmethoden bietet der
+					Client an?</FONT></P>
+					<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Bietet
+					der Client Kompressionsmethoden an?</FONT></P>
+				</OL>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			1:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			2:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			3:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			4:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=15>
+				<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Betrachten
+				Sie nun die Details von <FONT FACE="FreeMono, monospace">Server
+				Hello</FONT>.</FONT></P>
+				<OL>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Geben
+					Sie die <I>vollständige</I> Zufallszahl an, die der Server zum
+					Client schickt. </FONT>
+					</P>
+					<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Welche
+					Verschlüsselungsmethode wählt der Server aus?</FONT></P>
+				</OL>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			1:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			2:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=16>
+				<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Betrachten
+				Sie nun die Details von <FONT FACE="FreeMono, monospace">Certificate,…,Server
+				Hello Done. </FONT>Wenn dieses Paket nicht angezeigt wird, dann
+				starten Sie ggf. den Firefox neu (Wenn in der gleichen Session
+				die Zertifikate bereits ausgetauscht wurden, dann werden sie
+				evtl. nicht neu übertragen).</FONT></P>
+				<OL>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Wieviele
+					Zertifikate werden gesendet?</FONT></P>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Geben
+					Sie für alle Zertifikate den <FONT FACE="FreeMono, monospace">CommonName</FONT>,
+					die <FONT FACE="FreeMono, monospace">OrganizationalUnitName</FONT>
+					sowie den <FONT FACE="FreeMono, monospace">OrganizationName</FONT>
+					an.</FONT></P>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Wie
+					hängen die Zertifikate zusammen? </FONT>
+					</P>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Welches
+					Zertifikat ist das Root-Zertifikat, woran erkennen Sie es?</FONT></P>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Wie
+					lange ist das Root-Zertifikat noch gültig?</FONT></P>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Geben
+					Sie die <I>ersten 8 Byte</I> des PublicKey, dass der Client
+					später zum Verschlüsseln des PremasterSecrets verwenden wird,
+					in <I>Hexadezimalschreibweise</I> an.</FONT></P>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Machen
+					Sie einen Wireshark-Screenshot, auf dem der PublicKey markiert
+					ist.</FONT></P>
+					<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"></P>
+					<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Wieviel
+					<I>Byte</I> umfasst der öffentliche Schlüssel <I>insgesamt</I>?</FONT></P>
+				</OL>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			1:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			2:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			3:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			4:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			5:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			6:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot
+			(7):</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			8:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=17>
+				<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Sehen
+				Sie sich die Details von <FONT FACE="FreeMono, monospace">Client
+				Key Exchange,…</FONT> an.</FONT></P>
+				<OL>
+					<LI><P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Das
+					verschlüsselte PremasterSecret finden Sie in <FONT FACE="FreeMono, monospace">Encryped
+					Handshake Message</FONT>. Wieviel <I>Byte</I> umfasst es?</FONT></P>
+					<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Markieren
+					Sie das verschlüsselte PremasterSecret in der
+					Hexadezimaldarstellung und fügen Sie hier einen Screenshot
+					davon ein.</FONT></P>
+				</OL>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort
+			1:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot
+			(2):</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=18>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Loggen
+				Sie sich bei HTW-Webmail ein und versuchen Sie, das Paket mit den
+				Einwahldaten im Wireshark-Capture zu finden. Welche Pakete kommen
+				in Frage?</FONT></P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<H2 LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">3.
+			SSH-Schlüssel</FONT></H2>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=19>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Erzeugen
+				Sie ein eigenes Schlüsselpaar zur Authentifzierung bei ssh.
+				Gehen Sie dazu auf die Seite:
+				</FONT><FONT FACE="DejaVu Sans Mono, monospace">https://www.bsdwiki.de/SSH_Key_Auth.
+				</FONT><FONT FACE="Verdana, sans-serif">Sie erhalten hoffentlich
+				von Ihrem Browser eine Zertifikatswarnung.</FONT><FONT FACE="DejaVu Sans Mono, monospace">
+				Machen Sie einen Screenshot und geben Sie den Grund für die
+				Warnung mit eigenen Worten an. </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Antwort:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=20>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Machen
+				Sie eine einmalige Ausnahme und gehen Sie trotzdem auf die Seite.
+				Generieren Sie ein Schlüsselpaar nach Anleitung </FONT><FONT COLOR="#000000"><FONT FACE="Verdana, sans-serif"><FONT SIZE=3><SPAN LANG="de-DE">(SSH
+				Schlüsselpaar erstellen). Machen Sie einen Screenshot des
+				.ssh-Verzeichnisses, auf dem die beiden Schlüssel zu sehen sind.
+				</SPAN></FONT></FONT></FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Screenshot:</FONT></P>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=568>
+			<OL START=21>
+				<LI><P LANG="de-DE" CLASS="western"><FONT FACE="Verdana, sans-serif">Senden
+				Sie mir Ihren öffentlichen SSH-Schlüssel per signierter Email
+				zu. </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD WIDTH=58>
+			<OL START=0>
+				<P LANG="de-DE" CLASS="western"></P>
+			</OL>
+		</TD>
+	</TR>
+</TABLE>
+<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=21>
+	<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in">
+	</P>
+	<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"></P>
+	<P LANG="de-DE" CLASS="western" STYLE="margin-bottom: 0in"></P>
+</OL>
+<DIV TYPE=FOOTER>
+	<P LANG="de-DE" STYLE="margin-top: 0.44in; margin-bottom: 0in"><BR>
+	</P>
+</DIV>
+</BODY>
+</HTML>
