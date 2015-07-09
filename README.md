@@ -9,6 +9,8 @@ Es wird nur ein Apache-Webserver mit PHP-Unterstützung benötigt, allerdings m�
 
 - Der Pfad zum `AuthUserFile` in der Datei `dokumente/.htaccess` muss absolut sein und entsprechend bearbeitet werden.
 
+- Das Admin-Passwort in `admin/index.php` sollte geändert werden.
+
 - Die Anleitung für die Studierenden findet sich in der Datei `Websec.md`. Ändern Sie hier alle URLs mit der Domain `fiw-com.f4.htw-berlin.de` entsprechend Ihrer eigenen Konfiguration. Zudem muss die Email-Adresse `prof-heronimus@lists.htw-berlin.de` auf eine eigene Adresse geändert werden.
 
 - Die Datei `kekse/keksdose.php` muss von den Studierenden im Web bereitgestellt werden – hierfür muss eine Möglichkeit geschaffen und der Hinweistext entsprechend umgeschrieben werden.
