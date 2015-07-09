@@ -42,7 +42,6 @@
 
    if (isset($_POST['aufgabe'])) {
       $aufgabe = filter_var($_POST['aufgabe'], FILTER_SANITIZE_SPECIAL_CHARS);
-      var_dump($aufgabe);
       file_put_contents($klausurfragen, "$aufgabe\n", FILE_APPEND);
    }
 
