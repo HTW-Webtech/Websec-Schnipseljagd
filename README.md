@@ -5,7 +5,7 @@ Ziel ist es, Studierende praktisch mit typischen Sicherheitslücken im Web und m
 
 ## Installation und Bereitstellung
 
-Es wird nur ein Apache-Webserver mit PHP-Unterstützung benötigt, allerdings müssen einige Details angepasst werden:
+Es wird nur ein Apache-Webserver mit PHP-Unterstützung (und `php5-sqlite`) benötigt, allerdings müssen einige Details angepasst werden:
 
 - Der Pfad zum `AuthUserFile` in der Datei `dokumente/.htaccess` muss absolut sein und entsprechend bearbeitet werden.
 
