@@ -9,7 +9,7 @@ Es wird nur ein Apache-Webserver mit PHP-Unterstützung (und `php5-sqlite`) ben�
 
 - Der Pfad zum `AuthUserFile` in der Datei `dokumente/.htaccess` muss absolut sein und entsprechend bearbeitet werden.
 
-- Die Dateien `hall_of_fame.csv` und `dokumente/klausurfragen.txt` und das Verzeichnis `assets/sessions` müssen schreibbar sein.
+- Die Dateien `hall_of_fame.csv` und `dokumente/klausurfragen.txt` und die Verzeichnisse `assets/sessions` und `foodlog/images` müssen schreibbar sein.
 
 - Das Admin-Passwort in `admin/index.php` sollte geändert werden.
 
