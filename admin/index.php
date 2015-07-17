@@ -76,7 +76,7 @@
             <?php endif; ?>
 
             <form role="form" action="." method="POST">
-               <input class="form-control" type="text" name="username" placeholder="Benutzername">
+               <input class="form-control" type="text" name="username" placeholder="Benutzername" autofocus>
                <input class="form-control" type="password" name="password" placeholder="Passwort">
                <button type="submit" class="btn btn-primary btn-block">Einloggen</button>
             </form>
