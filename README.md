@@ -13,6 +13,8 @@ Es wird nur ein Apache-Webserver mit PHP-Unterstützung (und `php5-sqlite`) ben�
 
 - Die Passwörter in `admin/index.php` und `.htpasswd` sollten geändert werden (letzteres per crypt(3), bspw. durch `openssl passwd -crypt passw0rt`).
 
+- Das Muster in `foodlog/index.php` (`/^s0[0-9]{6}\.jpg\.js$/`) matcht Matrikelnummern der HTW Berlin und müsste gegebenenfalls angepasst werden.
+
 - Die Anleitung für die Studierenden findet sich in der Datei `Websec.md`. Ändern Sie hier alle URLs mit der Domain `fiw-com.f4.htw-berlin.de` entsprechend Ihrer eigenen Konfiguration. Zudem muss die Email-Adresse `prof-heronimus@lists.htw-berlin.de` auf eine eigene Adresse geändert werden.
 
 - Die Datei `kekse/keksdose.php` muss von den Studierenden im Web bereitgestellt werden – hierfür muss eine Möglichkeit geschaffen und der Hinweistext entsprechend umgeschrieben werden.

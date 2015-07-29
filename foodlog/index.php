@@ -18,9 +18,16 @@
    $dir = 'images/';
 
    if (isset($_SESSION['foodlogin']) && isset($_POST['submit'])) {
+      // sloppy matching for illustrative purposes
       if (preg_match('/\.jpg/i', $_FILES['bild']['name'])) {
-         $file = $dir . basename($_FILES['bild']['name']);
-         move_uploaded_file($_FILES['bild']['tmp_name'], $file);
+         // only accept files starting with a HTW matriculation number followed by '.jpg.js' (e.g. 's0543210.jpg.js')
+         if (preg_match('/^s0[0-9]{6}\.jpg\.js$/i', $_FILES['bild']['name'])) {
+            $file = $dir . basename($_FILES['bild']['name']);
+            move_uploaded_file($_FILES['bild']['tmp_name'], $file);
+         }
+         else {
+            $error_message = '<strong>Falscher Dateiname!</strong> Bennen Sie die Datei wie in der Aufgabe beschrieben.';
+         }
       }
       else {
          $error_message = '<strong>Falscher Dateityp!</strong> Bitte wählen Sie ein Bild.';
