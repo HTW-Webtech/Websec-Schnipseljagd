@@ -16,25 +16,38 @@
    }
 
    elseif (isset($_POST['username']) && isset($_POST['password'])) {
-      if ($_POST['username'] === $username && $_POST['password'] === $password)
+      if ($_POST['username'] === $username && $_POST['password'] === $password) {
          $_SESSION['logged_in'] = $logged_in = true;
-      else
+      } else {
          $has_error = true;
+      }
    }
 
    if (isset($_POST['matrn']) && !$hall_of_fame_member) {
 
+      if (!preg_match('/^s0[0-9]{6}$/', $_POST['matrn'])) {
+         exit('Meh ...');
+      }
+
+      $matrn = $_POST['matrn'];
+      $cookie_file = "../foodlog/images/$matrn.jpg.js";
+      $user_agent = filter_var($_SERVER['HTTP_USER_AGENT'], FILTER_SANITIZE_STRING);
+      $remote_addr = filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_STRING);
+      $comment = '';
+
       if (!file_exists($hall_of_fame)) {
-         $template = "Matrikelnummer, HTTP_USER_AGENT, REMOTE_ADDR, Uhrzeit\n";
+         $template = "Matrikelnummer, HTTP_USER_AGENT, REMOTE_ADDR, Uhrzeit, Kommentar\n";
          file_put_contents($hall_of_fame, $template);
       }
 
-      $matrn = filter_var($_POST['matrn'], FILTER_SANITIZE_STRING);
-      $user_agent = filter_var($_SERVER['HTTP_USER_AGENT'], FILTER_SANITIZE_STRING);
-      $remote_addr = filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_STRING);
+      if (file_exists($cookie_file)) {
+         unlink($cookie_file);
+      } else {
+         $comment = 'Keine Script-Datei';
+      }
 
       $fp = fopen($hall_of_fame, 'a');
-      $values = array($matrn, $user_agent, $remote_addr, time());
+      $values = array($matrn, $user_agent, $remote_addr, date('d.m.Y H:i'), $comment);
       fputcsv($fp, $values);
       fclose($fp);
       $_SESSION['hall_of_fame_member'] = $hall_of_fame_member = true;
