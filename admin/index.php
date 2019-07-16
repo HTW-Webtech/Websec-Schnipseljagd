@@ -72,7 +72,7 @@
 
    <div class="container">
 
-   <? if (!$logged_in) : ?>
+   <?php if (!$logged_in) : ?>
 
       <div class="panel panel-default panel-small">
 
@@ -97,7 +97,7 @@
          </div> <!-- / .panel-body -->
       </div> <!-- / .panel -->
 
-   <? else : ?>
+   <?php else : ?>
 
       <div class="panel panel-success panel-small">
 
@@ -148,7 +148,7 @@
             </ol>
       </div>
 
-   <? endif; ?>
+   <?php endif; ?>
 
    </div> <!-- / .container -->
 </body>
