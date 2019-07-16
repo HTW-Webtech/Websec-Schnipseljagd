@@ -2396,7 +2396,7 @@
 
                     // load the session, if it's there
 
-                    if ( isset($_COOKIE[session_name()]) && session_id() !== '' ) {
+                    if ( isset($_COOKIE[session_name()]) && session_id() !== '' && !isset($_SESSION) ) {
                         session_start();
                     }
 
@@ -2411,10 +2411,7 @@
                                     'cookies' => ( isset($_COOKIE)  ? $_COOKIE  : array() )
                             ),
 
-                            $request//,
-                            // $response,
-
-                            // $_SERVER
+                            $request
                     );
                     $this->displayError( $message, $srcErrLine, $errFile, $errFileType, $stackTrace, $fileLinesSets, $numFileLines, $dump );
 
@@ -2480,7 +2477,7 @@
                 return array( $ex, $stackTrace, $code, $errFile, $errLine );
             }
 
-            private function generateDumpHTML( $arrays, $request, $response, $server ) {
+            private function generateDumpHTML( $arrays, $request ) {
                 $arrToHtml = function( $name, $array, $css='' ) {
                     $max = 0;
 
