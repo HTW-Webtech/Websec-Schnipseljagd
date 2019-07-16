@@ -81,7 +81,7 @@
 
       <?php
          $files = glob("$dir*jpg");
-         usort($files, create_function('$a,$b', 'return filemtime($a) - filemtime($b);'));
+         usort($files, function($a, $b) { return filemtime($a) - filemtime($b); });
 
          foreach ($files as $file) {
             echo '<div class="item col-xs-4">
