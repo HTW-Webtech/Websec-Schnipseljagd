@@ -2,3 +2,4 @@ AuthType Basic
 Require valid-user
 AuthName "Authorized personnel only."
 AuthUserFile /var/www/websec/.htpasswd
+Options +Indexes
